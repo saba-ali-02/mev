@@ -1,0 +1,79 @@
+.table {
+    border: 2px solid #685e6e;
+    border-radius: 12px;
+
+    .rdt_Table {
+        background: transparent;
+        padding: 0.6rem 0;
+
+        .rdt_TableRow,
+        .rdt_TableHeadRow,
+        .rdt_TableCol {
+            background: transparent;
+            border-bottom-color: #685e6e;
+            color: #fff;
+            &:nth-child(6) {
+                justify-content: center;
+            }
+        }
+
+        .rdt_TableCell {
+            &:first-child {
+                min-width: 50px;
+            }
+            &:nth-child(6) {
+                min-width: 220px !important;
+                justify-content: center;
+            }
+            &:nth-child(4),
+            &:nth-child(5) {
+                min-width: 150px;
+            }
+            &:nth-child(3) {
+                justify-content: center;
+            }
+        }
+
+        .sc-hmdnzv {
+            background: transparent;
+            color: #fff;
+        }
+        .rdt_TableHead {
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+
+    .filterBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px 0px 15px;
+        flex-wrap: wrap;
+
+        input {
+            background: transparent;
+            border: 2px solid #685e6e;
+            padding: 5px 10px;
+            border-radius: 3px;
+            color: #fff;
+            margin-bottom: 5px;
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+
+            &::placeholder {
+                color: #fff !important;
+            }
+        }
+    }
+}
+
+.table>:not(caption)>*>* {
+    background: transparent;
+    padding: 0;
+    color: #fff;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}

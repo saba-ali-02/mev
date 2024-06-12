@@ -1,0 +1,24 @@
+Form {
+  .form-group {
+    margin-bottom: 15px;
+    .form-control {
+      width: 100%;
+      border-radius: 30px;
+      padding: 12px 22px;
+      font-family: "Gilroy";
+      font-weight: 500;
+      color: #6d6771;
+      transition: all 0.3s ease;
+      &::placeholder {
+        color: #6d6771;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      &:focus {
+        box-shadow: none;
+        // transform: scale(1.02);
+      }
+    }
+    
+  }
+}

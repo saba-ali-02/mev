@@ -1,0 +1,66 @@
+@import "./button";
+@import "./typegraphy";
+@import "./slickSlider";
+@import "./form";
+@import "./include-media";
+@import "./tabs";
+@import "./variable";
+@import "./fonts";
+@import "./datatable";
+
+body {
+  margin: 0;
+  font-family: "inter", sans-serif;
+  color: #9b9b9b;
+  font-size: 14px;
+  background: #170f24;
+  background-image: url(../public/images/bg.png);
+  background-position: center;
+    background-repeat: no-repeat;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+section{
+  padding: 60px 0;
+}
+
+.image-box {
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+// scroll bar
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #AB5A82;
+  border-radius: 10px;
+  height: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #AB5A82;
+}
+.h-100 {
+  min-height: 100%;
+  height: unset !important;
+}

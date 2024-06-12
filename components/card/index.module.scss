@@ -1,0 +1,59 @@
+.card {
+    border: 2px solid #685e6e;
+    border-radius: 12px;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    .coin {
+        > div {
+            padding-bottom: 10px;
+            img {
+                width: 20px;
+                height: auto;
+                margin-right: 8px;
+            }
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            border-bottom: 2px solid #685e6e;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+    }
+    .amount{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        font-size: 18px;
+        flex-wrap: wrap;
+        .time{
+            color: #EA88B8;
+            font-size: 12px;
+        }
+    }
+    .tokens {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+    
+        img {
+            width: 16px;
+            margin-right: 0;
+    
+            &:last-child {
+                margin-right: 5px;
+            }
+        }
+    }
+    .details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        padding: 15px 0 0 0;
+    }
+}
